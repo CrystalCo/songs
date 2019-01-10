@@ -29,6 +29,7 @@ class SongList extends Component {
 
 // Every time 'Select' button is pressed, it calls this f(x):
 const mapStateToProps = (state) => {
+    console.log(state);
     return { songs: state.songs };
 }
 
