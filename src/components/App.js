@@ -1,12 +1,13 @@
 import React from 'react';
-import { selectSong } from '../actions';
+import SongList from './SongList';
+// import { selectSong } from '../actions';
 
 const App = () => {
   return (
     <div className="App">
-      App
+      <SongList />
     </div>
   );
-}
+};
 
 export default App;
