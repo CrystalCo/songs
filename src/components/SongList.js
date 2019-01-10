@@ -23,13 +23,18 @@ class SongList extends Component {
     }
 
     render() {
-        console.log(this.props);
         return <div className="ui divided list"> {this.renderList()} </div>
     }
 }
 
+// Every time 'Select' button is pressed, it calls this f(x):
 const mapStateToProps = (state) => {
     return { songs: state.songs };
 }
 
+/**
+ * When we pass in our action creators, the connect() does a special operation 
+ * on the f's inside the Obj.  Wraps them all up in another JS f(x)
+ * Takes the action that's returned and automatically calls the DISPATCH f(x)
+ */
 export default connect(mapStateToProps, { selectSong })(SongList);
