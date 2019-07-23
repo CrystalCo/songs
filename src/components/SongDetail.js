@@ -10,10 +10,12 @@ const SongDetail = ({ song }) => {
       <div> 
         <h3>Details for: </h3>
         <p>
-            Title: {song.title}
-            <br />
-            Duration: {song.duration}
-        </p> 
+          Song ID: {song.id}
+          <br />
+          Title: {song.title}
+          <br />
+          Artist: {song.artist}
+        </p>
       
       </div>
     );
